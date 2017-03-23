@@ -10,7 +10,7 @@
       "NETCOREAPP1_1"
     ],
     "languageVersion": "",
-    "platform": "x64",
+    "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,

@@ -1507,6 +1507,60 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "RabbitMQ.Client/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Console": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Linq": "4.1.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
+        }
+      },
+      "RawRabbit/1.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "RabbitMQ.Client": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.dll": {}
+        }
+      },
+      "RawRabbit.vNext/1.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "1.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0",
+          "Microsoft.Extensions.Logging": "1.0.0",
+          "RawRabbit": "1.10.0"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.vNext.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.vNext.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -4805,6 +4859,39 @@
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "tools/install.ps1"
+      ]
+    },
+    "RabbitMQ.Client/4.0.1": {
+      "sha512": "pgxmOTHm0UhXjdxhuoGqcf0dSNkFFS7284219Me/J1DDHZnTvN+yP0LLAgi7NePmN2v/6a3C3JAqX+yfDroKQA==",
+      "type": "package",
+      "path": "rabbitmq.client/4.0.1",
+      "files": [
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.dll",
+        "rabbitmq.client.4.0.1.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
+    "RawRabbit/1.10.0": {
+      "sha512": "giYR29JYRlhLyU9v7DzOm8sdzmIMjHYi3+Mgh2hXkD+lzgtNQ2YTbkvPX8/GHKG5HUnQSHsWYmpsXEV6C4NmxA==",
+      "type": "package",
+      "path": "rawrabbit/1.10.0",
+      "files": [
+        "lib/net451/RawRabbit.dll",
+        "lib/netstandard1.5/RawRabbit.dll",
+        "rawrabbit.1.10.0.nupkg.sha512",
+        "rawrabbit.nuspec"
+      ]
+    },
+    "RawRabbit.vNext/1.10.0": {
+      "sha512": "ZiTgONsJyOgOEzb8EBHBg44ZY8oS7E+w+2mbNecudZfW5J5qBL2GynsxCYDLf/5TY+wypAhq7Ov9JMAwgXap5Q==",
+      "type": "package",
+      "path": "rawrabbit.vnext/1.10.0",
+      "files": [
+        "lib/net451/RawRabbit.vNext.dll",
+        "lib/netstandard1.5/RawRabbit.vNext.dll",
+        "rawrabbit.vnext.1.10.0.nupkg.sha512",
+        "rawrabbit.vnext.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -9579,7 +9666,9 @@
       "Microsoft.AspNetCore >= 1.1.1",
       "Microsoft.AspNetCore.Mvc >= 1.1.2",
       "Microsoft.Extensions.Logging.Debug >= 1.1.1",
-      "Microsoft.NETCore.App >= 1.1.1"
+      "Microsoft.NETCore.App >= 1.1.1",
+      "RawRabbit >= 1.10.0",
+      "RawRabbit.vNext >= 1.10.0"
     ]
   },
   "packageFolders": {
@@ -9588,16 +9677,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workspace\\competition\\comp_api\\comp_api.csproj",
+      "projectUniqueName": "c:\\workspace\\competition\\comp_api\\comp_api.csproj",
       "projectName": "comp_api",
-      "projectPath": "C:\\workspace\\competition\\comp_api\\comp_api.csproj",
-      "outputPath": "C:\\workspace\\competition\\comp_api\\obj\\",
+      "projectPath": "c:\\workspace\\competition\\comp_api\\comp_api.csproj",
+      "outputPath": "c:\\workspace\\competition\\comp_api\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/comp_api.dll": "C:\\workspace\\competition\\comp_api\\bin\\placeholder\\netcoreapp1.1\\comp_api.dll"
+        "lib/netcoreapp1.1/comp_api.dll": "c:\\workspace\\competition\\comp_api\\bin\\placeholder\\netcoreapp1.1\\comp_api.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {
@@ -9623,6 +9712,14 @@
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "1.1.1"
+          },
+          "RawRabbit": {
+            "target": "Package",
+            "version": "1.10.0"
+          },
+          "RawRabbit.vNext": {
+            "target": "Package",
+            "version": "1.10.0"
           }
         }
       }

@@ -1,4 +1,3 @@
-
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +10,9 @@ namespace comp_api.Controllers
         [HttpPost]
         public OkResult Notification()
         {
+            RabbitMQHelper rabbitMQHelper = new RabbitMQHelper();
+            rabbitMQHelper.sendMessage();
+
             return Ok();
         }
 
