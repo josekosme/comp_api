@@ -1,0 +1,8 @@
+C:\workspace\competition\comp_api\bin\X64\Debug\netcoreapp1.1\comp_api.deps.json
+C:\workspace\competition\comp_api\bin\X64\Debug\netcoreapp1.1\comp_api.runtimeconfig.json
+C:\workspace\competition\comp_api\bin\X64\Debug\netcoreapp1.1\comp_api.runtimeconfig.dev.json
+C:\workspace\competition\comp_api\bin\X64\Debug\netcoreapp1.1\comp_api.dll
+C:\workspace\competition\comp_api\bin\X64\Debug\netcoreapp1.1\comp_api.pdb
+C:\workspace\competition\comp_api\obj\X64\Debug\netcoreapp1.1\comp_api.AssemblyInfo.cs
+C:\workspace\competition\comp_api\obj\X64\Debug\netcoreapp1.1\comp_api.dll
+C:\workspace\competition\comp_api\obj\X64\Debug\netcoreapp1.1\comp_api.pdb
