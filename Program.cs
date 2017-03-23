@@ -15,7 +15,8 @@ namespace comp_api
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
+                //.UseIISIntegration()
+                .UseUrls("http://*:8000")
                 .UseStartup<Startup>()
                 .Build();
 
