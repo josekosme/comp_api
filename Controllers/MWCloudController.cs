@@ -1,4 +1,4 @@
-using System.Net;
+using comp_api.common;
 using Microsoft.AspNetCore.Mvc;
 
 namespace comp_api.Controllers
@@ -10,8 +10,8 @@ namespace comp_api.Controllers
         [HttpPost]
         public OkResult Notification()
         {
-            RabbitMQHelper rabbitMQHelper = new RabbitMQHelper();
-            rabbitMQHelper.sendMessage();
+            RabbitMQHelper.init();
+            RabbitMQHelper.publisher("competitionEndpointQueue", "*** Testantando API *****");
 
             return Ok();
         }
