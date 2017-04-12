@@ -13,24 +13,17 @@ namespace comp_api
     {
         public static void Main(string[] args)
         {
+            var certicate = new  X509Certificate2("cert.pem");                
+
             var host = new WebHostBuilder() 
                 .UseKestrel(options => 
                 { 
-                    options.UseHttps("cosmecert.pem", "xmlsecretkey"); 
+                    options.UseHttps(certicate); 
                 }) 
                 .UseUrls("http://*:4000", "https://*:4200") 
                 .UseContentRoot(Directory.GetCurrentDirectory()) 
                 .UseStartup<Startup>() 
                 .Build(); 
-
-            // var host = new WebHostBuilder()
-            //     .UseKestrel( options => {
-            //         options.UseHttps(null, new X509Certificate2("") )
-            //     .UseContentRoot(Directory.GetCurrentDirectory())
-            //     //.UseIISIntegration()
-            //     .UseUrls("http://*:8000")
-            //     .UseStartup<Startup>()
-            //     .Build();
 
             host.Run();
         }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "6c2b45e29a9c4e9d8e9e694387b6159c4e8726e9"
+    "signature": "12a076875db3c2c47688981c5d77385bdae692b2"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,7 @@
         "dependencies": {
           "Microsoft.AspNetCore": "1.1.1",
           "Microsoft.AspNetCore.Mvc": "1.1.2",
+          "Microsoft.AspNetCore.Server.Kestrel.Https": "1.1.1",
           "Microsoft.Extensions.Logging.Debug": "1.1.1",
           "Microsoft.NETCore.App": "1.1.1",
           "RawRabbit": "1.10.0",
@@ -643,6 +644,19 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Server.Kestrel.dll": {}
+        }
+      },
+      "microsoft.aspnetcore.server.kestrel.https/1.1.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Server.Kestrel": "1.1.1",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Security": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Server.Kestrel.Https.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNetCore.Server.Kestrel.Https.dll": {}
         }
       },
       "microsoft.aspnetcore.webutilities/1.1.1": {
@@ -3220,6 +3234,13 @@
       "sha512": "sha512-0bo/u+HLlZB4nCPXFFZrWME+yeInu21VypvMPWqnOZipRdrECvJR2ERWxg50YWgJYVCdYi8aTbGKrwmlc6Lq4Q==",
       "path": "microsoft.aspnetcore.server.kestrel/1.1.1",
       "hashPath": "microsoft.aspnetcore.server.kestrel.1.1.1.nupkg.sha512"
+    },
+    "microsoft.aspnetcore.server.kestrel.https/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wuYHimeg1j9oe9KT6TJQ95oiQ/8Koq8klCMAoaHvTo433R0Mf5+0x99VRVZsA4GdTo3Ddiqg+pyoX53jVuiQQA==",
+      "path": "microsoft.aspnetcore.server.kestrel.https/1.1.1",
+      "hashPath": "microsoft.aspnetcore.server.kestrel.https.1.1.1.nupkg.sha512"
     },
     "microsoft.aspnetcore.webutilities/1.1.1": {
       "type": "package",
